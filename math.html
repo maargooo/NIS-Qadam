@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Математика - NIS Qadam</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { background-color: #f4f7f6; margin: 0; font-family: 'Montserrat', sans-serif; }
+        header { background: #003366; color: white; padding: 15px 0; position: sticky; top: 0; z-index: 1000; border-bottom: 3px solid #00d4ff; }
+        
+        .header-container { width: 90%; max-width: 1200px; margin: auto; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 24px; font-weight: bold; text-decoration: none; color: white; }
+        .logo span { color: #00d4ff; }
+        
+        .header-controls { display: flex; align-items: center; gap: 15px; }
+
+        .btn-back { background: #00d4ff; color: #003366; padding: 10px 18px; text-decoration: none; border-radius: 8px; font-weight: bold; transition: 0.3s; display: inline-flex; align-items: center; }
+        .btn-back:hover { background: white; }
+
+        .container { width: 90%; max-width: 1200px; margin: auto; }
+
+        h1 { color: #003366; margin: 40px 0 10px 0; text-align: center; }
+        .section-desc { text-align: center; color: #666; margin-bottom: 40px; }
+        
+        .level-title { background: #003366; color: white; padding: 15px 25px; border-radius: 10px; margin: 40px 0 25px 0; display: inline-block; font-size: 18px; }
+
+        .video-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+            gap: 25px; 
+            margin-bottom: 50px;
+        }
+
+        .video-card { 
+            background: white; 
+            border-radius: 15px; 
+            overflow: hidden; 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05); 
+            transition: 0.3s;
+            border-bottom: 4px solid #00d4ff;
+            display: flex;
+            flex-direction: column;
+        }
+        .video-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+
+        .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; background-color: #000; }
+        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+
+        .video-info { padding: 15px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; }
+        .video-info h3 { font-size: 16px; color: #003366; margin: 5px 0 0 0; line-height: 1.4; }
+        .video-info span { font-size: 12px; color: #00d4ff; font-weight: bold; text-transform: uppercase; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">NIS <span>Qadam</span></a>
+            <div class="header-controls">
+                <a href="index.html" class="btn-back">← Артқа қайту</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Математикалық сауаттылық</h1>
+        <p class="section-desc">НЗМ емтиханына дайындыққа арналған толық бейне-курс</p>
+
+        <h2 class="level-title">1-кезең: Математика негіздері (База)</h2>
+        <div class="video-grid">
+            <div class="video-card">
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/6AhDjBHI2KU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <div class="video-info"><span>1-сабақ</span><h3>Санды және әріпті өрнектер</h3></div>
+            </div>
+            <div class="video-card">
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/f_F81G3JUU8" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <div class="video-info"><span>2-сабақ</span><h3>Арифметикалық амалдар</h3></div>
+            </div>
+            <div class="video-card">
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/-mA6_u5DB5w" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <div class="video-info"><span>3-сабақ</span><h3>Теңдеулер</h3></div>
+            </div>
+            <div class="video-card">
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/RR0jy3BtI6U" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <div class="video-info"><span>4-сабақ</span><h3>Гаусс әдісі</h3></div>
+            </div>
+            <div class="video-card">
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/7ZShV2XSnr8" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <div class="video-info"><span>5-сабақ</span><h3>Бөлінгіштік белгілері</h3></div>
+            </div>
+            <div class="video-card">
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/ojA5c0FM2J4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <div class="video-info"><span>6-сабақ</span><h3>Жай және құрама сандар</h3></div>
+            </div>
+            <div class="video-card">
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/lR9hAlzVQc8" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <div class="video-info"><span>7-сабақ</span><h3>ЕҮОБ және ЕКОЕ</h3></div>
+            </div>
+            <div class="video-card">
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/9Z2gn8UdxgE" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <div class="video-info"><span>8-сабақ</span><h3>Жай бөлшектер мен аралас сандар</h3></div>
+            </div>
+            <div class="video-card">
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/bdKJ0SN15mI" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <div class="video-info"><span>9-сабақ</span><h3>Бөлшектерді қосу және азайту</h3></div>
+            </div>
+            <div class="video-card">
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/AKApzvt1XU4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <div class="video-info"><span>10-сабақ</span><h3>Аралас сандар (қосу/азайту)</h3></div>
+            </div>
+            <div class="video-card">
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/wv5ORgsE51Q" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <div class="video-info"><span>11-сабақ</span><h3>Бөлшектерді көбейту және бөлу</h3></div>
+            </div>
+            <div class="video-card">
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/QBIeJ5Zk1TI" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <div class="video-info"><span>12-сабақ</span><h3>Санның бөлігін табу</h3></div>
+            </div>
+            <div class="video-card">
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/i2s1tOKa-Ko" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <div class="video-info"><span>13-сабақ</span><h3>Бөлігі бойынша санды табу</h3></div>
+            </div>
+            <div class="video-card">
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/XCeh3bb4s78" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <div class="video-info"><span>14-сабақ</span><h3>Бірлесіп жұмыс істеуге есептер</h3></div>
+            </div>
+        </div>
+
+        <h2 class="level-title">2-кезең: Күрделі тақырыптар мен нұсқа талдау</h2>
+        <div class="video-grid">
+            <div class="video-card">
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/H0U8h1hm_18" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <div class="video-info"><span>15-сабақ</span><h3>Масштабқа қатысты есептер</h3></div>
+            </div>
+            <div class="video-card">
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/na1dtGVcjxw" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <div class="video-info"><span>16-сабақ</span><h3>Пайыздар теориясы</h3></div>
+            </div>
+            <div class="video-card">
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/g8QPIYVSy9A" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <div class="video-info"><span>17-сабақ</span><h3>Пайызға есептер (1 бөлім)</h3></div>
+            </div>
+            <div class="video-card">
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/yq_5qzy048s" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <div class="video-info"><span>18-сабақ</span><h3>Пайызға есептер (2 бөлім)</h3></div>
+            </div>
+            <div class="video-card">
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/YtbrmeMNRME" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <div class="video-info"><span>19-сабақ</span><h3>Жаңа логикалық амал</h3></div>
+            </div>
+            <div class="video-card">
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/6afKX-7USFM" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <div class="video-info"><span>20-сабақ</span><h3>Статистика негіздері</h3></div>
+            </div>
+            <div class="video-card">
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/zkB4w7vYZ04" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <div class="video-info"><span>21-сабақ</span><h3>Сағат тілдері (бұрыш табу)</h3></div>
+            </div>
+            <div class="video-card">
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/IY74VUPBMHw" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <div class="video-info"><span>22-сабақ</span><h3>Сандар тізбегі және заңдылықтар</h3></div>
+            </div>
+            <div class="video-card">
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/rDk9fu5Sz7A" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <div class="video-info"><span>23-сабақ</span><h3>Шифрлар. Сандар мен әріптер</h3></div>
+            </div>
+            <div class="video-card">
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/ytdIB4jkBn4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <div class="video-info"><span>24-сабақ</span><h3>Концентрация (қоспалар)</h3></div>
+            </div>
+            <div class="video-card">
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/eWXXd7jKc1g" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <div class="video-info"><span>25-сабақ</span><h3>Сандар мен фигуралар байланысы</h3></div>
+            </div>
+            <div class="video-card">
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/iSkg7rC2EN8" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <div class="video-info"><span>26-сабақ</span><h3>Оқулықтың бетін нөмірлеу</h3></div>
+            </div>
+            <div class="video-card">
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/Q2eopDbsB_0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <div class="video-info"><span>27-сабақ</span><h3>Гаусс әдісі (күрделі)</h3></div>
+            </div>
+            <div class="video-card">
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/IOQpniuLvaU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <div class="video-info"><span>28-сабақ</span><h3>Сандар мен амалдар</h3></div>
+            </div>
+            <div class="video-card">
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/Ut12WE5HZgQ" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <div class="video-info"><span>29-сабақ</span><h3>Бұрыштар (Геометрия негізі)</h3></div>
+            </div>
+            <div class="video-card">
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/Kie-eZwxAq4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <div class="video-info"><span>30-сабақ</span><h3>Ерекше бөлшектер</h3></div>
+            </div>
+            <div class="video-card">
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/bjAANEOzePs" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <div class="video-info"><span>31-сабақ</span><h3>Фигуралар тізбегі</h3></div>
+            </div>
+            <div class="video-card">
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/ngjXF0tfASU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <div class="video-info"><span>32-сабақ</span><h3>Өзгеше фигураны тап</h3></div>
+            </div>
+            <div class="video-card">
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/DVr2XApiNYM" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <div class="video-info"><span>33-сабақ</span><h3>Бірлесіп орындалатын жұмыс</h3></div>
+            </div>
+            <div class="video-card">
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/C-gYdBfoVYk" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <div class="video-info"><span>34-сабақ</span><h3>Үштік пропорция</h3></div>
+            </div>
+
+            <div class="video-card">
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/p_b5R8K93rI" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <div class="video-info"><span>Талдау</span><h3>Математика дайындық: 1-5 есеп</h3></div>
+            </div>
+            <div class="video-card">
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/E4rewZ_HqtY" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <div class="video-info"><span>Талдау</span><h3>Математика дайындық: 6-10 есеп</h3></div>
+            </div>
+            <div class="video-card">
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/OqZv2gIGXME" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <div class="video-info"><span>Талдау</span><h3>Математика дайындық: 11-15 есеп</h3></div>
+            </div>
+            <div class="video-card">
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/8p9_-gRWVdk" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <div class="video-info"><span>Талдау</span><h3>Математика дайындық: 16-20 есеп</h3></div>
+            </div>
+            <div class="video-card">
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/foyH5qDxtlI" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <div class="video-info"><span>Нұсқа талдау</span><h3>НЗМ, БИЛ, Дарын деңгейі</h3></div>
+            </div>
+            <div class="video-card">
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/Y_nJFgnIbtY" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <div class="video-info"><span>Нақты есептер</span><h3>НИШ 1-нұсқа талдау</h3></div>
+            </div>
+            <div class="video-card">
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/zCa810oWu0w" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <div class="video-info"><span>Нақты есептер</span><h3>НИШ 2-нұсқа талдау</h3></div>
+            </div>
+            <div class="video-card">
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/ltUPpg74H1E" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <div class="video-info"><span>Нақты есептер</span><h3>НИШ 4-нұсқа талдау</h3></div>
+            </div>
+            <div class="video-card">
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/WZydgho-gXE" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <div class="video-info"><span>Нақты есептер</span><h3>НИШ 5-нұсқа талдау</h3></div>
+            </div>
+        </div>
+    </div>
+
+    <footer style="padding: 40px 0; text-align: center; color: #888; background: #fff; margin-top: 50px; border-top: 1px solid #eee;">
+        <p>&copy; 2026 NIS Qadam. Білім бәріне қолжетімді.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

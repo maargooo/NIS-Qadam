@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тілдер - NIS Qadam</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { background-color: #f4f7f6; margin: 0; font-family: 'Montserrat', sans-serif; }
+        header { background: #003366; color: white; padding: 15px 0; position: sticky; top: 0; z-index: 1000; border-bottom: 3px solid #00d4ff; }
+        
+        .header-container { width: 90%; max-width: 1200px; margin: auto; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 24px; font-weight: bold; text-decoration: none; color: white; }
+        .logo span { color: #00d4ff; }
+        
+        .header-controls { display: flex; align-items: center; gap: 15px; }
+        
+        .btn-back { background: #00d4ff; color: #003366; padding: 10px 18px; text-decoration: none; border-radius: 8px; font-weight: bold; transition: 0.3s; display: inline-flex; align-items: center; }
+        .btn-back:hover { background: white; }
+
+        .container { width: 90%; max-width: 1200px; margin: auto; }
+
+        h1 { color: #003366; margin: 40px 0 10px 0; text-align: center; }
+        .section-desc { text-align: center; color: #666; margin-bottom: 40px; }
+        
+        /* Тілдерге арналған арнайы стильдер */
+        .lang-section { margin-top: 50px; }
+        .lang-title { padding: 12px 25px; border-radius: 50px; color: white; display: inline-block; margin-bottom: 25px; font-weight: bold; font-size: 1.2rem; }
+        .kz { background: #00aaff; } /* Көк */
+        .ru { background: #ff4b4b; } /* Қызыл */
+        .en { background: #2ecc71; } /* Жасыл */
+
+        .video-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+            gap: 25px; 
+            margin-bottom: 50px;
+        }
+
+        .video-card { 
+            background: white; 
+            border-radius: 15px; 
+            overflow: hidden; 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05); 
+            transition: 0.3s;
+            border-bottom: 4px solid #00d4ff;
+            display: flex;
+            flex-direction: column;
+        }
+        .video-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+
+        .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; background-color: #000; }
+        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+
+        .video-info { padding: 15px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; }
+        .video-info h3 { font-size: 16px; color: #003366; margin: 5px 0 0 0; line-height: 1.4; }
+        .video-info span { font-size: 12px; color: #00d4ff; font-weight: bold; text-transform: uppercase; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">NIS <span>Qadam</span></a>
+            <div class="header-controls">
+                <a href="index.html" class="btn-back">← Артқа қайту</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Тілдік құзыреттілік</h1>
+        <p class="section-desc">Оқылым мен тілдік ережелерді меңгеру курстары</p>
+
+        <div class="lang-section">
+            <div class="lang-title kz">🇰🇿 Қазақ тілі</div>
+            <div class="video-grid">
+                <div class="video-card">
+                    <div class="video-container"><iframe src="https://www.youtube.com/embed/A0CM_dzmTsY" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                    <div class="video-info"><span>НЗМ дайындық</span><h3>Қазақ тілінен тест талдау</h3></div>
+                </div>
+                <div class="video-card">
+                    <div class="video-container"><iframe src="https://www.youtube.com/embed/KoD2qtXKPFQ" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                    <div class="video-info"><span>Оқылым стратегиялары</span><h3>Мәтінмен жұмыс істеу әдістері</h3></div>
+                </div>
+                <div class="video-card">
+                    <div class="video-container"><iframe src="https://www.youtube.com/embed/ge6rJPY2Lfo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                    <div class="video-info"><span>Емтиханға шолу</span><h3>Тілдік ережелерді қайталау</h3></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="lang-section">
+            <div class="lang-title ru">🇷🇺 Орыс тілі (Русский язык)</div>
+            <div class="video-grid">
+                <div class="video-card">
+                    <div class="video-container"><iframe src="https://www.youtube.com/embed/orMSghznF2k" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                    <div class="video-info"><span>Анализ и понимание</span><h3>Работа с текстом</h3></div>
+                </div>
+                <div class="video-card">
+                    <div class="video-container"><iframe src="https://www.youtube.com/embed/FYlFU9QB5fI" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                    <div class="video-info"><span>Подготовка к тестам</span><h3>Грамматика и правописание</h3></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="lang-section">
+            <div class="lang-title en">🇬🇧 Ағылшын тілі (English)</div>
+            <div class="video-grid">
+                <div class="video-card">
+                    <div class="video-container"><iframe src="https://www.youtube.com/embed/WSCri0KljX8" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                    <div class="video-info"><span>Tenses and Structures</span><h3>English Grammar Basics</h3></div>
+                </div>
+                <div class="video-card">
+                    <div class="video-container"><iframe src="https://www.youtube.com/embed/JyWCpFTtQJ8" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                    <div class="video-info"><span>How to find main ideas</span><h3>Reading Practice</h3></div>
+                </div>
+                <div class="video-card">
+                    <div class="video-container"><iframe src="https://www.youtube.com/embed/1oyrA1Gp5fU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                    <div class="video-info"><span>Words for NIS exam</span><h3>Vocabulary Building</h3></div>
+                </div>
+                <div class="video-card">
+                    <div class="video-container"><iframe src="https://www.youtube.com/embed/t6tA6Y-mHqU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                    <div class="video-info"><span>Avoiding common mistakes</span><h3>Essential Grammar Tips</h3></div>
+                </div>
+                <div class="video-card">
+                    <div class="video-container"><iframe src="https://www.youtube.com/embed/UHKJGhRSauI" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                    <div class="video-info"><span>Practice session 1</span><h3>English Test Samples</h3></div>
+                </div>
+                <div class="video-card">
+                    <div class="video-container"><iframe src="https://www.youtube.com/embed/OGJoLs1OLXk" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                    <div class="video-info"><span>Practice session 2</span><h3>English Test Samples</h3></div>
+                </div>
+                <div class="video-card">
+                    <div class="video-container"><iframe src="https://www.youtube.com/embed/h0t8ZHmBvjI" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                    <div class="video-info"><span>Full guide</span><h3>Mock Exam Review</h3></div>
+                </div>
+                <div class="video-card">
+                    <div class="video-container"><iframe src="https://www.youtube.com/embed/txQAPYDy714" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                    <div class="video-info"><span>Last minute tips</span><h3>Final Preparation</h3></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer style="padding: 40px 0; text-align: center; color: #888; background: #fff; margin-top: 50px; border-top: 1px solid #eee;">
+        <p>&copy; 2026 NIS Qadam. Арманыңа бір қадам жақында.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
